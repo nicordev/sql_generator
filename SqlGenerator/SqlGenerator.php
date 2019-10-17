@@ -1,11 +1,11 @@
 <?php
 
 /**
- * A tool to make SQL insert queries
+ * A tool to make SQL queries
  *
- * Class SqlInsertGenerator
+ * Class SqlGenerator
  */
-class SqlInsertGenerator
+class SqlGenerator
 {
     /**
      * Generate a SQL file

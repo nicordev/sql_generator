@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . "/SqlGenerator.php";
+require __DIR__ . "/SqlGenerator/SqlGenerator.php";
 
 $table = "user";
 $columns = ["username", "password", "email"];
@@ -9,5 +9,5 @@ $values = [
     ["zog", "mdp", "zog@gmail.com"]
 ];
 
-echo SqlInsertGenerator::generateQuery($table, $columns, $values);
-SqlInsertGenerator::generateFile($table, $columns, $values);
+echo SqlGenerator::generateQuery($table, $columns, $values);
+SqlGenerator::generateFile($table, $columns, $values);
