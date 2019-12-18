@@ -8,6 +8,21 @@
 class SqlGenerator
 {
     /**
+     * Print the query using echo
+     *
+     * @param string $table
+     * @param array $columns
+     * @param array $values
+     */
+    public static function printQuery(
+        string $table,
+        array $columns,
+        array $values
+    ) {
+        echo self::generateQuery($table, $columns, $values);
+    }
+
+    /**
      * Generate a SQL file
      *
      * @param string $table
